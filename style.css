@@ -1,58 +1,102 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     background-color: #f1f1f1;
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 2rem 10rem;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-nav img{
-    width:8rem;
-    height:2.5rem;
+nav img {
+    width: 8rem;
+    height: 2.5rem;
 }
 
-nav ul{
+nav ul {
     display: flex;
     list-style: none;
 }
 
-nav a{
+nav a {
     margin-left: 20px;
     text-decoration: none;
     color: #333;
-    font-size:1rem;
+    font-size: 1rem;
 }
 
-
-
-.main-content{
-    background: url("https://framerusercontent.com/images/d9x6O1t3SDJ3xyeUtMH0yMMR7wQ.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
+.container-slider {
+    position: relative;
     width: 100%;
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* height: 100vh; */
-    /* background-color: #f1f1f1; */
+    max-width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slides {
+    display: flex;
+    height: 100%;
+    margin-top: 2rem;
+    animation: slide 10s infinite;
+}
+
+.slide {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    overflow: hidden;
+    object-fit: contain; /* Changed from cover to contain */
+}
+
+.content {
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
+    top: 1rem;
+}
+
+.content h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.content p {
+    font-size: 16px;
+    color: #181010;
+}
+
+@keyframes slide {
+    0%, 25% { transform: translateX(0); }
+    26%, 50% { transform: translateX(-100%); }
+    51%, 75% { transform: translateX(-200%); }
+    76%, 100% { transform: translateX(-300%); }
 }
