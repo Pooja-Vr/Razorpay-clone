@@ -36,10 +36,31 @@ nav ul {
 }
 
 nav a {
-    margin-left: 20px;
+    margin-left:1.2rem;
     text-decoration: none;
     color: #333;
     font-size: 1rem;
+}
+
+.login{
+    display:inline-block;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+    padding: .4rem 1rem;
+    border-radius: .4rem;
+    background-color: #f9f6f6;
+}
+
+.signup{
+  display:inline-block;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+  padding: .5rem 1rem;
+  border-radius: .3rem;
+  background-color:#2950DB;
+  color: #fff;
 }
 
 .container-slider {
@@ -49,7 +70,7 @@ nav a {
     height: 400px;
     margin: 0 auto;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: .5rem;
 }
 
 .slides {
@@ -65,7 +86,6 @@ nav a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
     position: relative;
 }
 
@@ -74,7 +94,7 @@ nav a {
     height: auto;
     padding: 2rem;
     overflow: hidden;
-    object-fit: contain; /* Changed from cover to contain */
+    object-fit: contain; 
 }
 
 .content {
@@ -92,8 +112,10 @@ nav a {
 .content p {
     font-size: 16px;
     color: #181010;
+    margin: 1rem 0;
 }
 
+/* ============= slide animation for img and content =============== */
 @keyframes slide {
     0%, 25% { transform: translateX(0); }
     26%, 50% { transform: translateX(-100%); }
