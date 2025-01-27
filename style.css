@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #f1f1f1;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 10rem;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav img{
+    width:8rem;
+    height:2.5rem;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-size:1rem;
+}
+
+
+
+.main-content{
+    background: url("https://framerusercontent.com/images/d9x6O1t3SDJ3xyeUtMH0yMMR7wQ.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* height: 100vh; */
+    /* background-color: #f1f1f1; */
+}
